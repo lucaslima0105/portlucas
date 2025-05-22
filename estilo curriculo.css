@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    font-family: Inter;
+
+}
+
+body {
+    background-color: #000000; 
+    color: #FFFFFF;
+    box-sizing: border-box;
+    height: 100vh;
+    
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 50px 20px; /* Padding lateral para respiro */
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.principal {
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+    
+}
+
+nav {
+    border-bottom: 1px solid #FE8D1D;
+}
+
+.espacomenu {
+    padding-right: 190px;
+    padding-left: 190px;
+}
+
+ul {
+    display: flex;
+    justify-content: start;
+    list-style-type: none;
+    align-items: center;
+    padding: 20px;
+    gap: 50px;
+    
+}
+    
+
+a { 
+    color: #FFFFFF;
+    text-decoration: none;
+
+}
+
+img {
+    max-width: 64%;
+    height: auto;
+    border-radius: 10px;
+    
+}
+
+.direita {
+    text-align: right;
+}
+
+h1 {
+    color: #FE8D1D;
+    line-height: 1,3em;
+    font-size: 35px;
+
+}
+
+h2
+{
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 15px;
+    padding-bottom: 1px;
+}
+
+.linha-branca {
+    display: flex;
+    flex-direction: column;
+    height: 1px;              
+    width: 100%;              
+    background-color: rgb(102, 102, 102);
+    margin: 50px 0;
+}
+
+.centraliza {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.img2 {
+
+     max-width: 100%;
+}
+
+nav a:hover {
+    color: #FE8D1D; 
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 30px 15px;
+        gap: 30px;
+    }
+
+    .espacomenu {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 15px 0;
+    }
+
+    .principal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .direita {
+        text-align: center;
+    }
+}

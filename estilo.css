@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    font-family: Inter;
+
+}
+
+body {
+    background-color: #000000; 
+    color: #FFFFFF;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.container {
+    padding: 50px 200px;
+}
+
+nav {
+    border-bottom: 1px solid #FE8D1D;
+}
+
+.espacomenu {
+    padding-right: 190px;
+    padding-left: 190px;
+}
+
+ul {
+    display: flex;
+    justify-content: start;
+    list-style-type: none;
+    align-items: center;
+    padding: 20px;
+    gap: 50px;
+    
+}
+    
+
+a { 
+    color: #FFFFFF;
+    text-decoration: none;
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    
+}
+
+.direita {
+    text-align: right;
+}
+
+h1 {
+    color: #FE8D1D;
+    line-height: 1,3em;
+
+
+}
+
+h2
+{
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+
+.principal {
+    display: flex;
+    align-items: center;
+    
+}
+
+.botoescurriculo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.botao
+{
+    background-color: #00831E;
+    width: 100px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 18px 40PX;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Inter';
+
+}
+
+nav a:hover {
+    color: #FE8D1D; 
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .espacomenu {
+         margin: 0 auto;
+         padding: 0 20px;
+ 
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+        align-items: flex-start;
+    }
+
+    .principal {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .direita {
+        text-align: center;
+        width: 100%;
+    }
+
+    .botoescurriculo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .botao {
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
